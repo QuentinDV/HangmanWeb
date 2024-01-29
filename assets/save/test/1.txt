@@ -1,0 +1,1 @@
+{"RevealdWord":["_","_","_"],"TabWord":["e","a","u"],"Letter":null,"Difficulty":"easy","Word":"","Pseudo":"test","Tryleft":14,"LenTabWord":0}

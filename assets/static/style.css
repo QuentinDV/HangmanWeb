@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Games', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #ececec;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    background-color: #2f435e;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid black;
+    width: 100%;
+}
+header a {
+    font-family: 'Games', sans-serif;
+    color: #ffffff;
+    font-size: 75px;
+    text-decoration: none;
+}
+
+main {
+    flex: 1; /* Occupe l'espace restant dans le conteneur flex (body) */
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2f435e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.difficulty {
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.test{
+    margin-top: 100px;
+}
+
+.back {
+    align-self: flex-start; /* Placez cet élément en haut du conteneur flex (main) */
+    padding: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.buttonsave {
+    border: 4px solid #2f435e; /* Couleur de la bordure : #007bff (bleu par défaut) */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    font-size: 45px; /* Taille du texte du bouton */
+    text-align: center; /* Alignement du texte au centre */
+    text-decoration: none; /* Supprimer le soulignement par défaut des liens */
+    display: inline-block; /* Permettre le style de la bordure sans bloquer le niveau en ligne */
+    cursor: pointer; /* Afficher un curseur au survol du bouton */
+}
+
+.border-green {
+    border: 4px solid #00ff00; /* Vert pour la difficulté "easy" */
+}
+
+.border-orange {
+    border: 4px solid #ff9900; /* Orange pour la difficulté "normal" */
+}
+
+.border-red {
+    border: 4px solid #ff0000; /* Rouge pour la difficulté "hard" */
+}
+
+.border-default {
+    border: 4px solid #2f435e; /* Bordure par défaut */
+}

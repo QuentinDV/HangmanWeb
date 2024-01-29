@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory</title>
+    <link rel="stylesheet" href="/assets/static/style.css">
+    <link rel="icon" href="/assets/img/green.png">
+</head>
+
+<body>
+    <header >
+        <div> <img src="/assets/img/hangman.png" height="100" width="100" ></div> 
+        <div> <a href="../hangman"><strong>Hangman</strong></a> </div> 
+        <div> <img src="/assets/img/hangman.png" style="opacity: 0;" height="100" width="100"> </div>
+    </header>
+
+    <main style="background-color: green; display: flex;align-items: center; justify-content: center;flex-direction: column;">
+        <p style="font-size: 100px;"><strong>Victory</strong></p>
+        <p style="font-size: 50px;">You found the Word: <strong>{{.Word}}</strong></p>
+
+        <a href="../hangman" style="color: black;font-size: 45px;background-color: #475f7f;padding: 10px; text-align: center;"s><strong>Rematch</strong></a>
+    </main>
+
+</body>

@@ -1,0 +1,1 @@
+{"RevealdWord":["_","a","_","i","_","_","_"],"TabWord":["c","a","b","i","n","e","t"],"Letter":null,"Difficulty":"easy","Word":"","Pseudo":"BLAZEFAST","Tryleft":14,"LenTabWord":0}

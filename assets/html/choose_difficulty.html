@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Difficulty</title>
+    <link rel="stylesheet" href="/assets/static/style.css">
+    <link rel="icon" href="/assets/img/hangman.png">
+</head>
+
+<body>
+    <header >
+        <div> <img src="/assets/img/hangman.png" height="100" width="100"></div> 
+        <div> <a href="../hangman"><strong>Hangman</strong></a> </div> 
+        <div> <img src="/assets/img/hangman.png" style="opacity: 0;" height="100" width="100"> </div>
+    </header>
+    <div class="back">
+        <a href="../hangman"><img src="/assets/img/back.png" width="60"></a>
+    </div>
+
+    <p style="font-size: 30px;">Hello <strong>{{.Pseudo}}</strong></p>
+    <p style="font-size: 20px;">Choose Your Difficulty:</p>
+    <br><br><br><br><br>
+
+    <main> 
+        <form action="/ChooseDifficultyForm" method="post">
+            <div class="difficulty">
+                <button type="submit" id="Easytext" name="difficulty" value="easy"> <p style="color:green;"><strong>Easy</strong></p></button>
+                <button type="submit" id="imageButton" name="difficulty" value="normal"> <p style="color: rgb(229,103,23);"><strong>Normal</strong></p></button>
+                <button type="submit" id="imageButton" name="difficulty" value="hard"> <p style="color:rgb(175, 12, 12);"><strong>Hard</strong></p></button>
+            </div>
+        </form>
+        <form action="/ChooseDifficultyForm" method="post">
+            <div class="difficulty">
+                <button type="submit" id="imageButton" name="difficulty" value="easy"> <img src="/assets/img/easy.png" alt="Image Easy"> </button>
+                <button type="submit" id="imageButton" name="difficulty" value="normal"> <img src="/assets/img/normal.png" alt="Image Normal"> </button>
+                <button type="submit" id="imageButton" name="difficulty" value="hard"> <img src="/assets/img/hard.png" alt="Image Hard"> </button>
+            </div>
+        </form>
+        
+    </main>
+</body>
+</html>

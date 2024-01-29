@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Mode</title>
+    <link rel="stylesheet" href="/assets/static/style.css">
+    <link rel="icon" href="/assets/img/green.png">
+</head>
+
+<body>
+    <header >
+        <div> <img src="/assets/img/hangman.png" height="100" width="100" ></div> 
+        <div> <a href="../hangman"><strong>Hangman</strong></a> </div> 
+        <div> <img src="/assets/img/hangman.png" style="opacity: 0;" height="100" width="100"> </div>
+    </header>
+
+    <main>
+        <p style="font-size: 45px; display: flex;justify-content: flex-end; padding: 30px 30px">Try Left: <strong>{{ .Tryleft }}</strong></p>
+
+        <br><br><br>
+
+        <p style="font-size: 70px; display: flex;justify-content: center">{{ .Word }}</p>
+        
+        <form action="/guessletter" method="post" style="display: flex; flex-direction: column;align-items: center;">
+            <br><br><br><br><br><br><br><br>
+
+            <label for="guess" style="font-size: 30px; "><strong>Your Guess :</strong></label>
+            <input type="text" id="guess" name="guess" required minlength="1" maxlength="{{.LenTabWord}}" style="width: 400px;height: 60px;font-size: 40px;  text-align: center;"/>
+                
+            <br><br>
+
+            <p style="font-size: 37px;">Letter Tried:</p>
+            <p style="font-size: 30px;"><strong>{{ .Letter }}</strong></p>
+
+        </form>
+        
+        <br><br>
+
+        <a style="display: flex; justify-content: center;" href="../hangman/save">
+            <img src="/assets/img/save.png" alt="Save Image" width="80" height="80">
+        </a>
+
+    </main>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('guess').focus();
+        };
+    </script>
+</body>

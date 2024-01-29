@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Web</title>
+    <link rel="stylesheet" href="/assets/static/style.css">
+    <link rel="icon" href="/assets/img/hangman.png">
+</head>
+
+<body>
+    <header>
+        <div> <img src="/assets/img/hangman.png" height="100" width="100" ></div>
+        <div> <a href="hangman"><strong>Hangman</strong></a> </div> 
+        <div> <img src="/assets/img/hangman.png" style="opacity: 0;" height="100" width="100"> </div>
+    </header>
+
+    <main>
+        <form action="/pseudoform" method="post" style="display: flex; flex-direction: column;align-items: center;">
+            <div>
+                <label for="pseudo" style="font-size: 45px; "><strong>Your Name :</strong></label>
+            </div>
+            <div>
+                <input type="text" id="pseudo" name="pseudo" required minlength="3" maxlength="11" size="30" style="width: 450px;height: 75px;font-size: 50px;  text-align: center;"/>
+            </div>
+            <br>
+            <div>
+                <button type="submit" style="color: black;font-size: 45px;background-color: #475f7f;padding: 10px; text-align: center;"><strong>New Game</strong></button>
+            </div>
+            <br>
+            <div>
+                <button type="submit" name="load" value="true" style="color: black;font-size: 45px;background-color: #475f7f;padding: 10px; text-align: center;"><strong>Load Save</strong></button>
+            </div>
+            <br>
+            <div>
+                <button type="submit" name="delete" value="true" style="color: black;font-size: 45px;background-color: #475f7f;padding: 10px; text-align: center;"><strong>Delete Save</strong></button>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('pseudo').focus();
+        };
+    </script>
+</body>
